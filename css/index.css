@@ -82,12 +82,12 @@ ul li{
 
     .right-column {
         width: 280px;
-
     }
 
     .right-scroll{
         height: 410px;
         overflow: auto;
+
     }
 
     .ul-right-column{
@@ -95,18 +95,42 @@ ul li{
         width: 100%;
 
     }
+
+    .ul-right-column>li>a{
+        text-decoration: none;
+        color: black;
+    }
+
     .boxes{
         width: 60px;
     }
 
-
-
-    .ul-right-column >li >a > img{
-        width:25px;
+    .ul-right-column >li  > img {
+        width: 25px;
         height: 25px;
+    }
+
+    .ul-right-column li img,.right-box-container,.right-images,figure{
         margin-right: auto;
         margin-left: auto;
     }
+
+    figure{
+        width:230px;
+        border-bottom: 2px solid grey;
+        padding: 15px 0px 10px 0px;
+    }
+    figure:nth-child(3){
+        border-bottom: none;
+    }
+
+
+    figcaption{
+        font-size: small;
+        vertical-align: middle;
+        line-height: 30px;
+    }
+
 
     .right-navbar{
         font-size: x-small;
@@ -118,10 +142,36 @@ ul li{
         height: 300px;
     }
 
+    .right-box-container {
+        width:230px;
+        padding:5px;
+    }
 
+    .right-box-container >div{
+        border-bottom: 1px solid lightgrey;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
 
+    .right-box-container > a{
+        color: black;
 
+    }
 
+    .right-images{
+        width:25px;
+        height: 25px;
+    }
+
+    #references,#related,#details{
+        overflow-y:scroll ;
+    }
+
+    .active{
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
 
 
 
