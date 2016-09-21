@@ -8,16 +8,22 @@
     <meta name="keywords" content="atypon,atypon.com,accessibility,responsive layout">
     <meta name="author" content="George Tourtsinakis">
     <title>Atypon Assignment</title>
-    <link href="css/index.min.css" rel="stylesheet" type="text/css">
-    <script defer src="javascript/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="css/general-layout.min.css"  type="text/css">
+    <link rel="stylesheet"  href="css/medium-screens.min.css" type="text/css">
+    <link rel="stylesheet"  href="css/large-screens.min.css"  type="text/css">
+
+    <script  src="javascript/jquery-2.2.4.min.js"></script>
     <script defer src="javascript/modernizr.min.js"></script>
-    <script defer src="javascript/indexJS.js"></script>
+    <script  src="javascript/indexJS.js"></script>
 
 </head>
 <body>
 <!--Top bar wth logo-->
 <div class="top-bar">
-    <a href="index.html"><img class="img-logo" src="images/logo.jpg" alt="The company logo"></a>
+    <div>
+        <a id="logo" href="index.html"><img class="img-logo" src="images/logo.jpg" alt="The company logo"></a>
+    </div>
 </div><!--End top bar with logo-->
 
 <!--Main container-->
@@ -25,7 +31,7 @@
     <!--Left Column with article-->
     <div class="article-column ">
     <article class="article-scroll arial-font">
-        <div class="inside-div">
+        <div class="header-div">
         <h1>Dignissim dictum libero at facilisi ac eleifend nisi vestibulum leo lorem.</h1>
         <ul class="author-links">
             <li><a href="#author1">Author 1</a><span>,</span></li>
@@ -33,6 +39,7 @@
             <li><a href="#author3">Author 3 </a></li>
         </ul>
         </div>
+
         <section class="article-font">
             <h2>Abstract</h2>
             <p>Lorem ipsum dolor sit amet, no eum sensibus sadipscing.
@@ -83,6 +90,47 @@
                 Nisl interpretaris id eam, in est labores albucius tractatos, laudem accusata delicata ad eam.
                 Nostrud lobortis qualisque vix in, illum delicata mei te, libris honestatis liberavisse cu vis.
             </p>
+
+            <p>Lorem ipsum dolor sit amet,
+                ne aliquam dolores mnesarchum sit, errem accusamus vel cu,
+                per ad nibh tota nulla. Nisl facer instructior ut eum,
+                his ad errem epicuri complectitur. Id vide duis patrioque vel.
+                Pri ne feugiat dissentias, mea ut fastidii copiosae prodesset.
+                Ea aeterno aliquam perfecto eam, eum malis rationibus ea. Dicit consectetuer at mea, odio philosophia signiferumque
+                cu his, ne idque <a href="#">mentitum</a> signiferumque eum.
+                Docendi recusabo cotidieque et mea, id vel salutandi facilisis,
+                ea mei animal invenire. Usu ut illum tibique corrumpit. Cu justo meliore minimum vis.
+                Ea fugit doctus sit, sed an ubique inermis. Commodo percipit pertinacia est te,
+                vis causae vituperatoribus et. Quo mutat imperdiet ex.
+                Ex vel copiosae menandri lobortis, novum omnium gloriatur ex eam.
+                Ex hinc option hendrerit vix. Ut atqui ullum veniam per. Usu ad altera reprimique,
+                no pro cibo verterem evertitur. Summo facete eruditi sea ea, bonorum detraxit vix id.
+                Mei ea tollit habemus, nemore reformidans pro et, utinam ocurreret pri id.
+                Pri et rebum saepe facilisi, et magna corpora vix, eum ei mazim dolorem.
+                Malis integre verterem quo ut, et eum tota regione vulputate, integre adipisci ne usu.
+                Ne sit meis option epicuri, in consulatu vituperatoribus pro.
+                Cum sanctus admodum albucius et, causae tamquam luptatum et est. Eos iudico dignissim gloriatur at.
+                Eos ut ullum appellantur contentiones, purto salutandi te eum, no has dicit lobortis reprimique.
+                Qui vero neglegentur ne, no noster eirmod alienum vel. Voluptua volutpat et mei, ut tale feugiat volutpat pro.
+                Mel ut veritus pertinacia. Et his civibus detraxit. Labore corpora eu nec.
+                An mel eruditi pericula, nec ad justo nominati, mei quando ubique habemus at.
+                Ne vocent audire perfecto eos, choro libris ne his, vidit vocibus per id.
+                Malorum salutandi an mei, no eum eirmod voluptaria. Id cum eirmod periculis dignissim.
+                Ad velit docendi euripidis duo. Qui mollis quaeque oporteat ex.
+                Vix an dolor molestie eleifend, ne mollis nostrum sadipscing cum.
+                Aliquip invidunt rationibus est eu. Per laudem disputando complectitur et.
+                Movet tincidunt efficiendi quo cu, cu usu quando mandamus.
+                An vix inani dicit, nisl case an his, sit ei liber oratio theophrastus.
+                Ex duo graece ullamcorper, eum nihil sensibus sapientem cu. Ea ceteros instructior vis, nec ne autem viderer aperiri.
+                Nec ad possim philosophia, quem option ius eu, usu ex graeci perpetua petentium.
+                Delectus facilisi deterruisset id nec, an vis malis tollit hendrerit, sed intellegat pertinacia inciderint no.
+                Possit euismod tractatos mei ei. Ei eam modus aliquam sapientem, ne idque docendi luptatum est, sonet quaestio mel et.
+                Vim et malis summo. Duis omnium te pro, in mollis argumentum eos, sit quodsi aliquando vituperata eu.
+                Eam in noster reprehendunt, movet efficiantur signiferumque eum ei, vim eu laboramus evertitur incorrupte.
+                Partem sanctus sea ne. Omnium theophrastus vix et, latine impetus invidunt duo ne, pri at quas dicam.
+                Nisl interpretaris id eam, in est labores albucius tractatos, laudem accusata delicata ad eam.
+                Nostrud lobortis qualisque vix in, illum delicata mei te, libris honestatis liberavisse cu vis.
+            </p>
         </section>
     </article>
     </div><!--End left column with article-->
@@ -92,31 +140,32 @@
         <!--Top right bar with figures, references, related, details icons-->
         <nav class="right-navbar ">
         <ul class="ul-right-column ">
-            <li  class="boxes active"><a href="index.html">
+            <li id="show-figures" class="boxes active">
                 <img class="right-images" src="assets/figures.svg" alt="Figures Icon with Link">
                 <div>Figures</div>
-            </a>
+
             </li>
-            <li class="boxes"><a href="references.html">
+            <li id="show-references" class="boxes">
                 <img  class="right-images" src="assets/references.svg" alt="References Icon with Link">
                 <div>References</div>
-                </a>
+
             </li>
-            <li class="boxes"><a href="related.html">
+            <li id="show-related" class="boxes">
                 <img class="right-images"  src="assets/related.svg" alt="Related Icon with Link">
                 <div>Related</div>
-                </a>
+
             </li>
-            <li class="boxes"><a href="details.html">
+            <li id="show-details" class="boxes">
                 <img class="right-images" src="assets/info.svg" alt="Details Icon with Link">
                 <div>Details</div>
-                </a>
+
             </li>
         </ul>
         </nav><!--End top right bar with figures, references, related, details icons-->
 
         <!--Figures-->
-        <section id="figures" class="right-scroll">
+        <div id="figures">
+        <section class="right-scroll">
             <figure>
                 <img  src="assets/seattle-map.jpg" alt="Seattle Map" >
                 <figcaption>Fig1. - Seattle map.</figcaption>
@@ -131,13 +180,68 @@
                 <figcaption>Fig3. - Graph Steelhead</figcaption>
             </figure>
         </section>
+        </div>
 
+        <!--References-->
+        <section id="references">
+            <div class="right-box-container">
+                <div>Lorem</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="right-box-container">
+                <div>Lorem</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+        </section>
 
+        <!--Related-->
+        <section id="related">
+            <div class="right-box-container">
+                <div>Related</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="right-box-container">
+                <div>Title</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="right-box-container">
+                <div>Competing interests</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
 
+        </section>
+
+        <!--Details-->
+        <section id="details">
+            <div class="right-box-container">
+                <div>Details</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+            <div class="right-box-container">
+                <div>Details</div>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+            </div>
+        </section>
     </div>
-
+    </div><!--End right column-->
 
 </div><!--End main container-->
+
+
 
 </body>
 </html>
