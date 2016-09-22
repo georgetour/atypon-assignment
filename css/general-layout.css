@@ -16,6 +16,11 @@ body{
     border-bottom: 1px solid black;
 }
 
+.header{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
 .img-logo{
     padding: 10px;
 }

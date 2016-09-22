@@ -2,26 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
     <meta name="description" content="Test project for atypon.com with responsive layout and user accessibility priority." >
     <meta name="keywords" content="atypon,atypon.com,accessibility,responsive layout">
     <meta name="author" content="George Tourtsinakis">
     <title>Atypon Assignment</title>
 
     <link rel="stylesheet" href="css/general-layout.min.css"  type="text/css">
-    <link rel="stylesheet"  href="css/medium-screens.min.css" type="text/css">
+
+
+    <link rel="stylesheet" href="css/small-screens.min.css" type="text/css">
     <link rel="stylesheet"  href="css/large-screens.min.css"  type="text/css">
+    <link rel="stylesheet"  href="css/medium-screens.min.css" type="text/css">
 
     <script  src="javascript/jquery-2.2.4.min.js"></script>
-    <script defer src="javascript/modernizr.min.js"></script>
-    <script  src="javascript/indexJS.js"></script>
+    <script defer  src="javascript/modernizr.min.js"></script>
+    <script defer src="javascript/pageAnimation.js"></script>
+    <script   src="javascript/indexJS.js"></script>
 
 </head>
 <body>
+<!--Starting Data for larger screens-->
+<div class="empty-everything">
 <!--Top bar wth logo-->
 <div class="top-bar">
-    <div>
+    <div >
         <a id="logo" href="index.html"><img class="img-logo" src="images/logo.jpg" alt="The company logo"></a>
     </div>
 </div><!--End top bar with logo-->
@@ -140,36 +149,27 @@
         <!--Top right bar with figures, references, related, details icons-->
         <nav class="right-navbar ">
         <ul class="ul-right-column ">
-            <li id="show-figures" class="boxes active ">
-                <img class="right-images" src="assets/figures.svg" alt="Figures Icon with Link">
+            <li id="show-figures"  class="boxes active ">
+                <a href="#references"><img  class="right-images" src="assets/figures.svg" alt="Figures Icon with Link"></a>
                 <div>Figures</div>
-
             </li>
             <li id="show-references" class="boxes">
-                <img  class="right-images" src="assets/references.svg" alt="References Icon with Link">
+                <a href="#page2"><img  class="right-images" src="assets/references.svg" alt="References Icon with Link"></a>
                 <div>References</div>
-
             </li>
             <li id="show-related" class="boxes">
-                <img class="right-images"  src="assets/related.svg" alt="Related Icon with Link">
+                <a href="#page3"><img class="right-images"  src="assets/related.svg" alt="Related Icon with Link"></a>
                 <div>Related</div>
-
             </li>
             <li id="show-details" class="boxes">
-                <img class="right-images" src="assets/info.svg" alt="Details Icon with Link">
+                <a href="#page4"><img class="right-images" src="assets/info.svg" alt="Details Icon with Link"></a>
                 <div>Details</div>
-
             </li>
         </ul>
         </nav><!--End top right bar with figures, references, related, details icons-->
 
         <!--Figures-->
         <div id="figures">
-            <!--Top bar wth logo-->
-                <div>
-                    <h1 id="backToMain" > Back</h1>
-                </div>
-
         <section class="right-scroll">
             <figure>
                 <img  src="assets/seattle-map.jpg" alt="Seattle Map" >
@@ -209,6 +209,7 @@
 
         <!--Related-->
         <section id="related">
+
             <div class="right-box-container">
                 <h3>Related</h3>
                 <ul>
@@ -257,9 +258,11 @@
         </section>
     </div>
     </div><!--End right column-->
+</div><!--End whole container-->
 
-</div><!--End main container-->
-
+    <!--Template container for smaller screens-->
+    <div id="container">
+    </div>
 
 
 </body>
